@@ -5,16 +5,7 @@ import Image from '../Image'
 const Banner = () => {
   return (
  <Container>
-  <Flex
-    className="
-      flex-col lg:flex-row
-      items-center lg:items-start
-      justify-between
-      py-14 sm:py-16 md:py-20
-      px-4 sm:px-6 lg:px-0
-      gap-8 lg:gap-16
-    "
-  >
+  <Flex className="flex-col lg:flex-row items-center justify-between pt-10 sm:pt-16 lg:pt-22 pb-10 sm:pb-16 lg:pb-36 gap-6 lg:gap-0">
     {/* Text Section */}
     <div className="text w-full lg:w-[624px]">
       <p className="text-[16px] sm:text-[18px] font-semibold leading-[130%] text-[#2947BF] poppins">
@@ -36,11 +27,14 @@ const Banner = () => {
     </div>
 
     {/* Image Section */}
-    <div className="photo w-full lg:w-auto flex justify-center lg:justify-end pt-6 sm:pt-8 lg:pt-0">
+    <div className="photo w-full lg:w-auto flex justify-center lg:justify-end pt-6 lg:pt-0">
       <Image className="max-w-[260px] sm:max-w-[320px] md:max-w-[380px] lg:max-w-full h-auto" src="/images/man.png" />
     </div>
   </Flex>
 </Container>
+
+
+
 
   )
 }
